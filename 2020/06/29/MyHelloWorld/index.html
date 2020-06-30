@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     
-    <title>MyBatis核心组件 | Hexo</title>
+    <title>MyHelloWorld | Lucas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     
@@ -30,10 +30,10 @@
         <div class="header-type">
             
             <div class="avatar avatar-sm">
-                <img src="/images/avatar.jpg" alt="John Doe">
+                <img src="/images/avatar.jpg" alt="Lucas Tung">
             </div>
             
-            <a href="/">Hexo</a>
+            <a href="/">Lucas</a>
         </div>
         <div class="header-menu">
             <div class="header-menu-inner">
@@ -45,12 +45,8 @@
             </div>
             <div class="header-menu-social">
                 
-    <a class="social" target="_blank" href="">
-        <box-icon type='logo' name=''></box-icon>
-    </a>
-
-    <a class="social" target="_blank" href="">
-        <box-icon type='logo' name=''></box-icon>
+    <a class="social" target="_blank" href="https://github.com/Lucas-Tung">
+        <box-icon type='logo' name='github'></box-icon>
     </a>
 
             </div>
@@ -88,19 +84,29 @@
       <section class="inner">
         <section class="inner-main">
           <div class="post">
-    <article id="post-我的第一篇博客" class="article article-type-post" itemscope
+    <article id="post-MyHelloWorld" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
 
         
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="/2020/06/29/MyHelloWorld/" rel="gallery_ckc0tvtrc00059wtfgqv48umh">
+        <img src="/%5C2020%5C06%5C29%5CMyHelloWorld%5Ccat-5328304_1280.jpg" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
 
         
         <header class="article-header">
             
   
     <h1 class="article-title" itemprop="name">
-      MyBatis核心组件
+      MyHelloWorld
     </h1>
   
 
@@ -110,7 +116,7 @@
         <div class="article-more-info article-more-info-post hairline">
 
             <div class="article-date">
-  <time datetime="2020-06-29T07:12:42.000Z" itemprop="datePublished">2020-06-29</time>
+  <time datetime="2020-06-29T12:53:35.000Z" itemprop="datePublished">2020-06-29</time>
 </div>
 
             
@@ -118,32 +124,12 @@
             
 
             
-            <div class="article-busuanzi">
-                有 <span id="busuanzi_value_page_pv">N</span> 人看过
-            </div>
-            
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
-            <p><code>MyBatis</code> 作为十分流行的持久层框架, 被广大开发者所喜欢, 本文就 <code>MyBatis</code> 的四大核心框架做一些总结. </p>
-<a id="more"></a>
-
-<hr>
-<h2 id="SqlSessionFactoryBuilder"><a href="#SqlSessionFactoryBuilder" class="headerlink" title="SqlSessionFactoryBuilder"></a>SqlSessionFactoryBuilder</h2><h2 id="SqlSessionFactory"><a href="#SqlSessionFactory" class="headerlink" title="SqlSessionFactory"></a>SqlSessionFactory</h2><p>具有两种创建方式:</p>
-<ul>
-<li>通过 xml 创建(<strong>推荐</strong>)</li>
-<li>通过代码创建</li>
-</ul>
-<h2 id="SqlSession"><a href="#SqlSession" class="headerlink" title="SqlSession"></a>SqlSession</h2><h2 id="Mapper"><a href="#Mapper" class="headerlink" title="Mapper"></a>Mapper</h2><h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><p><code>SqlSessionFactoryBuilder</code>主要用来创建<code>SqlSessionFactory</code>, 创建完成之后即可以死亡</p>
-<p><code>SqlSessionFactory</code> 的作用相当于数据库连接池, 其生命周期应该伴随着 MyBatis 应用的整个过程.</p>
-<p><code>SqlSession</code> 类比于 <code>JDBC</code> 中的 <code>Connection</code>, 存在于一次业务处理中, 在业务处理完毕之后应该及时的关闭它, 以免系统资源的浪费.</p>
-<p><code>Mapper</code> 的运行依赖于数据库连接, 即依赖于 <code>SqlSession</code>, 如果连接关闭了, 那么 <code>Mapper</code> 的存在也就没有了意义, 所以 <code>Mapper</code> 的生命周期应该小于等于 <code>SqlSession</code></p>
-<pre><code class="java">// 以 Markdown 格式书写的代码块
-public class Main{
-    public static void main(String[] args){
-        System.out.println(&quot;这是hexo中的代码块&quot;);
-    }
-}</code></pre>
+            <h1 id="MyHello-Wolrd"><a href="#MyHello-Wolrd" class="headerlink" title="MyHello Wolrd"></a>MyHello Wolrd</h1><a id="more"></a>
+ /2020/06/29/MyHelloWorld/cat-5328304_1280.jpg
+<p>详细信息</p>
 
         </div>
 
@@ -168,6 +154,15 @@ public class Main{
     
 <nav class="article-nav">
   
+    <a href="/2020/06/29/MyBatis%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">下一篇</div>
+      <div class="article-nav-title">
+        
+          MyBatis（一）-- MyBatis核心组件
+        
+      </div>
+    </a>
+  
   
     <a href="/2020/06/29/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-caption">上一篇</div>
@@ -180,15 +175,15 @@ public class Main{
     <section class="share">
         <div class="share-title">分享</div>
         <a class="share-item" target="_blank"
-            href="https://twitter.com/share?text=MyBatis核心组件 - Hexo&url=http://yoursite.com/2020/06/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
+            href="https://twitter.com/share?text=MyHelloWorld - Lucas&url=http://yoursite.com/2020/06/29/MyHelloWorld/">
             <box-icon type='logo' name='twitter'></box-icon>
         </a>
         <a class="share-item" target="_blank"
-            href="https://www.facebook.com/sharer.php?title=MyBatis核心组件 - Hexo&u=http://yoursite.com/2020/06/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
+            href="https://www.facebook.com/sharer.php?title=MyHelloWorld - Lucas&u=http://yoursite.com/2020/06/29/MyHelloWorld/">
             <box-icon name='facebook-square' type='logo' ></box-icon>
         </a>
         <!-- <a class="share-item" target="_blank"
-            href="https://service.weibo.com/share/share.php?title=MyBatis核心组件 - Hexo&url=http://yoursite.com/2020/06/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/&pic=">
+            href="https://service.weibo.com/share/share.php?title=MyHelloWorld - Lucas&url=http://yoursite.com/2020/06/29/MyHelloWorld/&pic=">
             <div class="n-icon n-icon-weibo"></div>
         </a> -->
     </section>
@@ -199,8 +194,6 @@ public class Main{
 
 
 
-
-<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 </div>
         </section>
@@ -218,9 +211,23 @@ public class Main{
 
 
   
+  <div class="widget-wrap widget-cate">
+    <div class="widget-title"><span>Categories</span></div>
+    <div class="widget-inner">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ORM%E6%A1%86%E6%9E%B6/">ORM框架</a></li></ul>
+    </div>
+  </div>
+
 
 
   
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MyBatis/" rel="tag">MyBatis</a></li></ul>
+    </div>
+  </div>
+
 
 
   
@@ -230,7 +237,15 @@ public class Main{
       <ul>
         
           <li>
-            <a href="/2020/06/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">MyBatis核心组件</a>
+            <a href="/2020/06/30/MyBatis%EF%BC%88%E4%BA%8C%EF%BC%89-MyBatis%E9%85%8D%E7%BD%AE/">MyBatis（二）--MyBatis配置</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/29/MyBatis%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6/">MyBatis（一）-- MyBatis核心组件</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/29/MyHelloWorld/">MyHelloWorld</a>
           </li>
         
           <li>
@@ -261,7 +276,7 @@ public class Main{
   <footer class="footer">
     <div class="footer-inner">
         <div class="footer-info">
-            <span>&copy; 2013 - 2020 Hexo</span>
+            <span>&copy; 2013 - 2020 Lucas</span>
         </div>
         <div class="footer-powered">
             <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Aomori</a> Theme · Powered By Hexo
